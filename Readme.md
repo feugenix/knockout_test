@@ -1,8 +1,8 @@
-===Prerequiments
+####Prerequiments####
 node >= 0.10 and npm
 
-===Install
+####Install####
 npm i
 
-===How to start
+####How to start####
 npm start
