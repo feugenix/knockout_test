@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Knockout test app</title>
+</head>
+<body class="page">
+    <h1>Expenses calc</h1>
+    <div class="category">
+        <span>Category filter: </span>
+        <select data-bind="
+                    options: categories,
+                    optionsText: 'name',
+                    optionsCaption: 'Choose...',
+                    value: filter">
+        </select>
+    </div>
+    <div class="expensives">
+        <table class="expensives__content">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Category</th>
+                    <th>Value</th>
+                </tr>
+            </thead>
+            <tbody data-bind="foreach: costs">
+                <tr>
+                    <td data-bind="text: name"></td>
+                    <td data-bind="text: category.name"></td>
+                    <td data-bind="text: value"></td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr data-bind="with: newCost">
+                    <td>
+                        <input data-bind="value: name">
+                    </td>
+                    <td>
+                        <select data-bind="
+                                    options: $root.categories,
+                                    optionsText: 'name',
+                                    optionsCaption: 'Choose...',
+                                    value: category">
+                        </select>
+                    </td>
+                    <td>
+                        <input type="number" data-bind="value: value">
+                    </td>
+                </tr>
+            </tfoot>
+        </table>
+        <button data-bind="click: addExpensive">Add expensive</button>
+        <div class="expensives__total" data-bind="enable: Boolean(filter())">
+            Total value of this category: <span  data-bind="text: totalCategory"></span>
+        </div>
+        <div class="expensives__total">
+            Total value: <span  data-bind="text: total"></span>
+        </div>
+    </div>
+
+    <script src="/libs/knockout/dist/knockout.js"></script>
+    <script src="/views/index/index.js"></script>
+    <link href="/views/index/index.css" media="screen" rel="stylesheet" type="text/css">
+</body>
+</html>

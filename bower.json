@@ -1,0 +1,6 @@
+{
+    "name": "knockout_test",
+    "dependencies": {
+        "knockout": "~3.3.0"
+    }
+}

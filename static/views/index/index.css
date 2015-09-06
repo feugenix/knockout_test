@@ -1,0 +1,29 @@
+.page
+{
+    padding: 10px;
+
+    background-color: ##FDFEFF;
+}
+
+.expensives__content
+{
+    text-align: center;
+    color: rgba(10, 10, 10, .7);
+
+    border-collapse: collapse;
+}
+
+.expensives__content td
+{
+    margin-right: 10px;
+}
+
+.expensives__content tbody tr
+{
+    background-color: #CCC030;
+}
+
+.expensives__content tbody tr:nth-child(2n)
+{
+    background-color: #99966E;
+}

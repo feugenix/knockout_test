@@ -1,0 +1,12 @@
+{
+  "name": "knockout_test",
+  "description": "knockout test app — expenses calculator",
+  "private": true,
+  "dependencies": {
+    "bower": "~1.5.2",
+    "express": "~4.13.3"
+  },
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install"
+  }
+}
