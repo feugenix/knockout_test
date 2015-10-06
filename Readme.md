@@ -1,9 +1,11 @@
-<<<<<<< HEAD
+It's just a simple, ugly test app.
+
 ####Prerequiments####
-node >= 0.10 and npm
+node >= 4.0.0
+npm ~ 2.14
 
 ####Install####
 npm i
 
-####How to start####
+####Start####
 npm start
