@@ -9,3 +9,7 @@ npm i
 
 ####Start####
 npm start
+
+####Lint####
+After npm i
+./node_modules/.bin/eslint .
