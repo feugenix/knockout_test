@@ -1,4 +1,6 @@
-"use strict";
+/*eslint no-console: 0*/
+
+'use strict';
 
 let express = require('express'),
     app = express(),

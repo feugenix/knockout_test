@@ -1,3 +1,5 @@
+/*eslint no-console: 0*/
+
 var MainViewModel = {
     requireVM: function(module) {
         var moduleVMPath = 'views/' + module + '/' + module;
