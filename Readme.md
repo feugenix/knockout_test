@@ -11,5 +11,4 @@ npm i
 npm start
 
 ####Lint####
-After npm i
-./node_modules/.bin/eslint .
+After installation you can run ./node_modules/.bin/eslint .
