@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Knockout test app</title>
-</head>
-<body class="page">
+<div class="expensives__wrapper">
     <h1>Expenses calc</h1>
     <div class="category">
         <span>Category filter: </span>
@@ -50,16 +45,17 @@
             </tfoot>
         </table>
         <button data-bind="click: addExpensive">Add expensive</button>
-        <div class="expensives__total" data-bind="enable: Boolean(filter())">
-            Total value of this category: <span  data-bind="text: totalCategory"></span>
+
+        <div class="total">
+            <div class="expensives__total" data-bind="enable: Boolean(filter())">
+                Total value of this category: <span  data-bind="text: totalCategory"></span>
+            </div>
+            <div class="expensives__total">
+                Total value: <span  data-bind="text: total"></span>
+            </div>
         </div>
-        <div class="expensives__total">
-            Total value: <span  data-bind="text: total"></span>
-        </div>
+
     </div>
 
-    <script src="/libs/knockout/dist/knockout.js"></script>
-    <script src="/views/index/index.js"></script>
     <link href="/views/index/index.css" media="screen" rel="stylesheet" type="text/css">
-</body>
-</html>
+</div>

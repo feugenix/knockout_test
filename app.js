@@ -1,14 +1,10 @@
-var express = require('express');
-var app = express();
+"use strict";
 
-app.use(express.static('static', {
-    index: false
-}));
+let express = require('express'),
+    app = express(),
+    port = process.env.PORT || 11111;
 
-app.get('/', function(req, res) {
-    res.sendFile(__dirname + '/views/index/index.html')
-});
-
-var server = app.listen(11111, function () {
-  console.log('Started');
-});
+app
+    .use(express.static('static', { index: false }))
+    .get('/', (req, res) => res.sendFile(`${__dirname}/index.html`))
+    .listen(11111, () => console.log(`Started at localhost:${port}`));

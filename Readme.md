@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ####Prerequiments####
 node >= 0.10 and npm
 

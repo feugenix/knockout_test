@@ -1,8 +1,6 @@
-.page
+.category
 {
-    padding: 10px;
-
-    background-color: ##FDFEFF;
+    margin-bottom: 10px;
 }
 
 .expensives__content
@@ -26,4 +24,9 @@
 .expensives__content tbody tr:nth-child(2n)
 {
     background-color: #99966E;
+}
+
+.total
+{
+    margin-top: 10px;
 }

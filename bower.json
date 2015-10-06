@@ -1,6 +1,10 @@
 {
     "name": "knockout_test",
     "dependencies": {
-        "knockout": "~3.3.0"
+        "knockout": "~3.3.0",
+        "pagerjs": "~1.0.1"
+    },
+    "resolutions": {
+      "knockout": "~3.3.0"
     }
 }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Knockout test app</title>
+</head>
+<body class="page">
+    <div class="navigation">
+        <div>Links:</div>
+        <div class="navigation__links">
+            <a class="navigation__link" href="#!/index" title="index">Index</a>
+            <a class="navigation__link" href="#!/notready" title="notready">Not ready</a>
+        </div>
+    </div>
+
+    <div data-bind="page: {
+        id: 'index',
+        role: 'start',
+        sourceOnShow: 'views/index/index.html',
+        withOnShow: requireVM('index')
+    }">
+        Loading...
+    </div>
+
+    <div data-bind="page: {
+        id: 'notready',
+        sourceOnShow: 'views/notready/notready.html',
+        withOnShow: requireVM('notready')
+    }">
+        Loading...
+    </div>
+
+    <script type="text/javascript" data-main="js/init.js" src="libs/requirejs/require.js"></script>
+    <link href="/main.css" media="screen" rel="stylesheet" type="text/css">
+</body>
+</html>
