@@ -1,6 +1,6 @@
 <div class="expensives__wrapper">
     <h1>Expenses calc</h1>
-    <div class="category">
+<!--     <div class="category">
         <span>Category filter: </span>
         <select data-bind="
                     options: categories,
@@ -9,7 +9,7 @@
                     value: filter">
         </select>
     </div>
-    <div class="expensives">
+ -->    <div class="expensives">
         <table class="expensives__content">
             <thead>
                 <tr>
@@ -47,9 +47,10 @@
         <button data-bind="click: addExpensive">Add expensive</button>
 
         <div class="total">
-            <div class="expensives__total" data-bind="enable: Boolean(filter())">
+<!--             <div class="expensives__total" data-bind="enable: Boolean(filter())">
                 Total value of this category: <span  data-bind="text: totalCategory"></span>
             </div>
+ -->
             <div class="expensives__total">
                 Total value: <span  data-bind="text: total"></span>
             </div>
